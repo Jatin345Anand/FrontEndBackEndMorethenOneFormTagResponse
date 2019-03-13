@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- <div class="loader" id="load"></div> -->
+    <!-- action="/uploads" enctype="multipart/form-data" -->
+    <h4>WELCOME BPIT STUDENT EVALUATION SYSTEM</h4>
+    <form action="uploadpdf" id="uploadform" method="POST">
+
+
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>GGSIPU RESULT PDF</span>
+                <input type="file" name="ipupdf" id="ipupdf">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" name="ipupdfname" id="ipupdfname">
+            </div>
+        </div>
+
+        <div id="Buttons">
+
+            <input class="btn waves-light" id="changepdftoxls" type="submit" value="CHANGE PDF TO XLS" name="action" />
+
+            <input class="btn waves-light" id="downloadxls" type="submit" value="DOWNLOAD XLS" name="action" />
+        </div>
+    </form>
+
+    <hr><br><br><br>
+    <form action="uploadxls" id="downloadform" method="POST">
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>DOWNLOADED XLS</span>
+                <input type="file" name="idxls">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" name="xlsname" id="xlsname">
+            </div>
+        </div>
+
+        <div id="Buttons">
+            <input class="btn waves-light" id="changepdftoxls" type="submit" value=" UPLOAD XLS" name="action" />
+            <input class="btn waves-light" id="changepdftoxls" type="submit" value="PUSH DATA TO CLOUD" name="action" />
+
+
+        </div>
+    </form>
+    <br>
+    <br>
+    <!-- <div class="file-field input-field">
+            <div class="btn">
+                <span>COLLEGE INTERNAL ASSESSMENT XLS</span>
+                <input type="file" name="idxls">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+            </div>
+        </div> -->
+
+    <!-- <div id="Buttons">
+
+            <button class="btn waves-effect waves-light" id="change2" type="submit" name="action">UPLOAD XLS
+
+            </button>
+            <button class="btn waves-effect waves-light" type="submit" name="action">PUSH DATA TO CLOUD
+            </button>
+        </div> -->
+
+    <hr>
+    <br><br>
+
+
+</body>
+
+</html>
